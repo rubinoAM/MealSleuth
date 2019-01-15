@@ -89,7 +89,7 @@ input:focus, select:focus{
 }
 
 .search-box{
-    margin:0.75rem auto 0;
+    margin:0.75rem auto 5.6rem;
     width:86%;
     min-width:14rem;
     max-width:30rem;
@@ -349,18 +349,17 @@ input:focus, select:focus{
 
 .footer{
     background-color:#282421;
+    position: fixed;
     text-align:center;
-    padding:1.5rem 0;
+    padding:1.25rem 0;
     bottom:0;
     width:100%;
-    position: relative;
-    margin-top:2rem;
 }
 
 .footer span{
     color:#fff;
     font-family:'Montserrat', sans-serif;
-    font-weight:500;
+    font-weight:300;
 }
 
 /* Animations */
@@ -372,6 +371,7 @@ input:focus, select:focus{
 }
 
 /* Responsive Media Queries */
+
 @media (min-width:40rem){ /* CSS for Tablet Screens*/
     .page-body{
         background-size:cover;
@@ -456,7 +456,6 @@ input:focus, select:focus{
 
     .footer{
         position:static;
-        margin-top:0;
     }
 }
 
@@ -594,29 +593,5 @@ input:focus, select:focus{
 @media screen and (min-width:64rem) and (min-height:42rem){
     .page-body{
         min-height:85vh;
-    }
-
-    .footer{
-        position:static;
-    }
-}
-
-@media screen and (width:414px) and (height:736px){ /* iPhone 6/7/8 Plus Fix for Footer */
-    .footer{
-        position:absolute;
-        bottom:0;
-    }
-}
-
-@media screen and (width:375px) and (height:812px){ /* iPhone X Fix for Footer */
-    .footer{
-        position:absolute;
-        bottom:0;
-    }
-}
-
-@media screen and (width:1024px) and (height:1366px){ /* iPad Pro Fix for Results*/
-    .main-content{
-        flex-direction:column;
     }
 }
